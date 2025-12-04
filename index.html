@@ -9,46 +9,194 @@
     body { background: #fff8fb; color: #333; line-height: 1.5; }
     a { color: inherit; text-decoration: none; }
 
-    header { background: #ffe0ec; border-bottom: 1px solid #f3b7d0; padding: 1.5rem 1rem; margin-bottom: 1rem; }
+    header {
+      background: #ffe0ec;
+      border-bottom: 1px solid #f3b7d0;
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+    }
     header h1 { font-size: 1.8rem; margin-bottom: 0.4rem; }
     header p { font-size: 0.95rem; }
 
     .container { max-width: 900px; margin: 0 auto; padding: 1rem; }
 
-    h2 { font-size: 1.4rem; margin: 1.5rem 0 1rem; text-align: center; }
+    h2 {
+      font-size: 1.4rem;
+      margin: 1.5rem 0 1rem;
+      text-align: center;
+    }
 
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+    }
 
     .product {
-      background: #fff; border-radius: 1rem; padding: 0.9rem;
+      background: #fff;
+      border-radius: 1rem;
+      padding: 0.9rem;
       box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-      display: flex; flex-direction: column; gap: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
 
     .product img {
-      width: 100%; max-height: 220px; object-fit: cover;
-      background: #f6d7e6; border-radius: 0.9rem;
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      background: #f6d7e6;
+      border-radius: 0.9rem;
     }
 
     .product-title { font-weight: 600; font-size: 1rem; }
     .product-desc { font-size: 0.9rem; color: #555; }
     .product-price { font-weight: 700; color: #e05696; font-size: 1rem; }
 
-    .product-footer { margin-top: auto; display: flex; justify-content: space-between; align-items: center; }
+    .product-footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
 
     .btn-whatsapp {
-      padding: 0.45rem 0.9rem; border-radius: 999px;
-      background: #25d366; color: #fff;
-      font-size: 0.85rem; font-weight: 600;
-      text-align: center; box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      background: #25d366;
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     }
 
     .section-box {
-      background: #fff; padding: 1rem; border-radius: 1rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 1rem;
       box-shadow: 0 4px 14px rgba(0,0,0,0.05);
-      margin-bottom: 1rem; font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
     }
 
     .note-small { font-size: 0.75rem; color: #777; }
 
-    footer { text-align: center; padding: 1rem; font-size: 0.
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Giorgia Aroma Therapy</h1>
+      <p>Candele e decorazioni artigianali in cera di soia e gesso. Pezzi unici, realizzati a mano.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>I miei set artigianali</h2>
+
+    <section class="products">
+
+      <!-- Prodotto 1 -->
+      <article class="product">
+        <img src="tazza-lavanda.jpg" alt="Tazza-candela alla Lavanda">
+        <div class="product-title">Tazza-candela alla Lavanda</div>
+        <div class="product-desc">
+          Tazzina bianca con candela alla lavanda color prugna, petali essiccati,
+          vassoio intrecciato con dettagli argento, decorazione natalizia e piccolo cagnolino bianco.
+        </div>
+        <div class="product-footer">
+          <span class="product-price">€ 25</span>
+          <a class="btn-whatsapp"
+             href="https://wa.me/393463132255?text=Ciao%20Giorgia,%20vorrei%20informazioni%20sulla%20Tazza%20alla%20Lavanda"
+             target="_blank">
+            WhatsApp
+          </a>
+        </div>
+        <div class="note-small">Pezzo unico decorato a mano.</div>
+      </article>
+
+      <!-- Prodotto 2 -->
+      <article class="product">
+        <img src="tazza-cuore.jpg" alt="Tazza con cuore">
+        <div class="product-title">Tazza con cuore</div>
+        <div class="product-desc">
+          Tazzina bianca con cuore inciso e candela scura. Set semplice ed elegante con piattino coordinato.
+        </div>
+        <div class="product-footer">
+          <span class="product-price">€ 15</span>
+          <a class="btn-whatsapp"
+             href="https://wa.me/393463132255?text=Ciao%20Giorgia,%20vorrei%20la%20Tazza%20con%20Cuore"
+             target="_blank">
+            WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <!-- Prodotto 3 -->
+      <article class="product">
+        <img src="cuore-vassoio-perle.jpg" alt="Cuore rosa su vassoio con perle">
+        <div class="product-title">Cuore rosa su vassoio con perle</div>
+        <div class="product-desc">
+          Candela rosa in contenitore a cuore, su vassoio perlato con pigna e bacche rosse.
+        </div>
+        <div class="product-footer">
+          <span class="product-price">€ 24</span>
+          <a class="btn-whatsapp"
+             href="https://wa.me/393463132255?text=Ciao%20Giorgia,%20voglio%20il%20Cuore%20rosa"
+             target="_blank">
+            WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <!-- Prodotto 4 -->
+      <article class="product">
+        <img src="set-bianco-oro.jpg" alt="Set bianco e oro">
+        <div class="product-title">Set bianco e oro</div>
+        <div class="product-desc">
+          Vassoio ovale con fiore oro glitter, vasetto e portacandela decorati a mano con brillantini.
+        </div>
+        <div class="product-footer">
+          <span class="product-price">€ 28</span>
+          <a class="btn-whatsapp"
+             href="https://wa.me/393463132255?text=Ciao%20Giorgia,%20mi%20interessa%20il%20set%20bianco%20e%20oro"
+             target="_blank">
+            WhatsApp
+          </a>
+        </div>
+        <div class="note-small">Brillantini applicati a mano.</div>
+      </article>
+
+    </section>
+
+    <h2>Come ordinare</h2>
+    <section class="section-box">
+      <p>1. Scegli il set che ti piace.</p>
+      <p>2. Clicca sul tasto <strong>WhatsApp</strong>.</p>
+      <p>3. Ti rispondo con disponibilità, personalizzazioni e consegna.</p>
+    </section>
+
+    <h2>Contatti</h2>
+    <section class="section-box">
+      <p><strong>Giorgia Aroma Therapy</strong></p>
+      <p>📱 WhatsApp: 346 313 2255</p>
+      <p>📧 Email: <a href="mailto:geovlad@libero.it">geovlad@libero.it</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Giorgia Aroma Therapy – Tutti i diritti riservati.
+  </footer>
+</body>
+</html>
