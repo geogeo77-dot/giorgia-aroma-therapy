@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
-      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-family: "Segoe UI", system-ui, sans-serif;
       margin: 0;
       background: #fbeff4;
       color: #444;
@@ -14,41 +14,32 @@
 
     header {
       text-align: center;
-      padding: 24px 12px;
+      padding: 24px;
       background: #f7e3ec;
       border-bottom: 1px solid #e3c8d3;
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.9rem;
-      letter-spacing: 0.04em;
+      font-size: 2rem;
     }
 
     header p {
-      margin: 6px 0 0;
+      margin-top: 6px;
       font-size: 0.95rem;
     }
 
-    .nav {
-      margin-top: 10px;
-      font-size: 0.9rem;
-    }
-
-    .nav a {
+    nav a {
       margin: 0 8px;
       text-decoration: none;
       color: #aa6b8a;
-    }
-
-    .nav a:hover {
-      text-decoration: underline;
+      font-size: 0.9rem;
     }
 
     main {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 24px 16px 40px;
+      padding: 24px;
     }
 
     .intro {
@@ -56,174 +47,128 @@
       margin-bottom: 24px;
     }
 
-    .intro h2 {
-      margin-bottom: 6px;
-      font-size: 1.4rem;
-    }
-
-    .intro p {
-      margin-top: 0;
-      font-size: 0.95rem;
-    }
-
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
     }
 
     .card {
-      background: #ffffff;
+      background: #fff;
       border-radius: 18px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      padding: 12px 12px 16px;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
+      padding: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
     .card img {
       width: 100%;
       border-radius: 16px;
-      object-fit: cover;
-      max-height: 210px;
-    }
-
-    .card-body {
-      padding: 10px 4px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
+      margin-bottom: 12px;
     }
 
     .categoria {
       font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
       color: #b4879e;
-    }
-
-    .card h3 {
-      margin: 0;
-      font-size: 1rem;
+      text-transform: uppercase;
     }
 
     .prezzo {
-      font-weight: 600;
-      margin-top: 4px;
+      font-weight: bold;
       color: #7d465f;
+      margin-top: 4px;
     }
 
     .note {
-      font-size: 0.8rem;
-      color: #777;
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 6px;
     }
 
     .badge {
       display: inline-block;
-      margin-top: 4px;
-      font-size: 0.7rem;
-      padding: 2px 7px;
-      border-radius: 999px;
-      border: 1px solid #f0c7da;
+      margin-top: 8px;
       background: #fce9f2;
+      border: 1px solid #f0c7da;
+      padding: 3px 8px;
+      font-size: 0.75rem;
+      border-radius: 999px;
     }
 
     footer {
       text-align: center;
+      padding: 20px;
       font-size: 0.8rem;
-      padding: 14px 8px 20px;
       color: #777;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Giorgia Aroma Therapy</h1>
-    <p>Candele e decorazioni artigianali in cera di soia e gesso – pezzi unici realizzati a mano.</p>
-    <div class="nav">
-      <a href="index.html">Home</a> ·
-      <a href="catalogo.html"><strong>Catalogo</strong></a> ·
-      <a href="contatti.html">Contatti</a>
+
+<header>
+  <h1>Giorgia Aroma Therapy</h1>
+  <p>Candele e decorazioni artigianali in cera di soia e gesso – pezzi unici realizzati a mano.</p>
+  <nav>
+    <a href="index.html">Home</a> ·
+    <a href="catalogo.html"><strong>Catalogo</strong></a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="intro">
+    <h2>Catalogo creazioni</h2>
+    <p>Foto, descrizioni e prezzi delle mie creazioni artigianali.</p>
+  </section>
+
+  <section class="grid">
+
+    <!-- TAZZA LAVANDA -->
+    <div class="card">
+      <img src="https://github.com/user-attachments/assets/73b0315f-edf7-499d-bdac-aaff777b0ef9" alt="Tazza-candela alla Lavanda">
+      <span class="categoria">Candele in contenitore</span>
+      <h3>Tazza-candela alla Lavanda</h3>
+      <p class="prezzo">€ 14,00</p>
+      <p class="note">Tazza in ceramica con cera di soia alla lavanda e decorazioni floreali, perfetta per creare un angolo relax.</p>
+      <span class="badge">Linea Relax</span>
     </div>
-  </header>
 
-  <main>
-    <section class="intro">
-      <h2>Catalogo creazioni</h2>
-      <p>Qui trovi una selezione dei miei pezzi. Ogni articolo è fatto a mano, le foto sono indicative: piccole variazioni rendono ogni creazione unica.</p>
-    </section>
+    <!-- TAZZA CON CUORE -->
+    <div class="card">
+      <img src="https://github.com/user-attachments/assets/3a4c0389-9397-4330-bd6a-7826d1ae6343" alt="Tazza con cuore">
+      <span class="categoria">Candele in contenitore</span>
+      <h3>Tazza con cuore</h3>
+      <p class="prezzo">€ 14,00</p>
+      <p class="note">Tazza decorativa con cuore, ideale come idea regalo romantica o per un pensiero speciale.</p>
+      <span class="badge">Idea regalo</span>
+    </div>
 
-    <section class="grid">
+    <!-- CUORE SU VASSOIO -->
+    <div class="card">
+      <img src="https://github.com/user-attachments/assets/78a8e722-14bc-43ee-b52e-4216faea3dc8" alt="Cuore rosa su vassoio con perle">
+      <span class="categoria">Composizioni romantiche</span>
+      <h3>Cuore rosa su vassoio con perle</h3>
+      <p class="prezzo">€ 18,00</p>
+      <p class="note">Vassoio decorativo con cuore rosa e perle, pensato come centrotavola o decorazione elegante.</p>
+      <span class="badge">Stile romantico</span>
+    </div>
 
-      <!-- MINI SCATOLINA BIANCA (6 €) -->
-      <article class="card">
-        <img src="img/mini-scatolina-bianca.jpg" alt="Mini scatolina bianca intrecciata con nastro Handmade">
-        <div class="card-body">
-          <span class="categoria">Mini decorazioni</span>
-          <h3>Mini scatolina bianca intrecciata</h3>
-          <p class="prezzo">€ 6,00</p>
-          <p class="note">
-            Contenitore decorativo in gesso ad alta densità, finitura bianca opaca,
-            perline applicate a mano e nastro “Handmade”.
-          </p>
-          <span class="badge">Best seller mercatino</span>
-        </div>
-      </article>
+    <!-- SET BIANCO E ORO -->
+    <div class="card">
+      <img src="https://github.com/user-attachments/assets/34d280b7-6e2f-4cc9-88f5-8e9991110792" alt="Set bianco e oro">
+      <span class="categoria">Set regalo</span>
+      <h3>Set decorativo bianco &amp; oro</h3>
+      <p class="prezzo">€ 24,00</p>
+      <p class="note">Set su vassoio con decorazioni bianche e oro, ideale come regalo importante o centrotavola.</p>
+      <span class="badge">Edizione limitata</span>
+    </div>
 
-      <!-- TAZZA CANDELA LAVANDA -->
-      <article class="card">
-        <img src="img/tazza-lavanda.jpg" alt="Tazza candela alla lavanda">
-        <div class="card-body">
-          <span class="categoria">Candele in contenitore</span>
-          <h3>Tazza-candela alla Lavanda</h3>
-          <p class="prezzo">€ 14,00</p>
-          <p class="note">
-            Tazza ceramica riempita con cera di soia naturale, profumo alla lavanda,
-            decorazioni floreali delicate.
-          </p>
-          <span class="badge">Linea Relax</span>
-        </div>
-      </article>
+  </section>
 
-      <!-- SET BIANCO ORO -->
-      <article class="card">
-        <img src="img/set-bianco-oro.jpg" alt="Set decorativo bianco e oro">
-        <div class="card-body">
-          <span class="categoria">Set regalo</span>
-          <h3>Set decorativo bianco &amp; oro</h3>
-          <p class="prezzo">€ 24,00</p>
-          <p class="note">
-            Vassoio in gesso rifinito a mano, elementi decorativi coordinati,
-            perfetto come centrotavola o regalo elegante.
-          </p>
-          <span class="badge">Edizione limitata</span>
-        </div>
-      </article>
+</main>
 
-      <!-- CUORE SU VASSOIO CON PERLE -->
-      <article class="card">
-        <img src="img/cuore-vassoio-perle.jpg" alt="Cuore rosa su vassoio con perle">
-        <div class="card-body">
-          <span class="categoria">Composizioni romantiche</span>
-          <h3>Cuore rosa su vassoio con perle</h3>
-          <p class="prezzo">€ 18,00</p>
-          <p class="note">
-            Vassoio decorativo con cuore rosa, perle applicate e finitura elegante.
-          </p>
-          <span class="badge">Stile romantico</span>
-        </div>
-      </article>
+<footer>
+  Giorgia Aroma Therapy · Creazioni artigianali in cera di soia e gesso
+</footer>
 
-    </section>
-  </main>
-
-  <footer>
-    Giorgia Aroma Therapy – Candele e decorazioni artigianali · Per ordini vedi la pagina Contatti.
-  </footer>
 </body>
 </html>
-<img src="https://github.com/user-attachments/assets/73b0315f-edf7-499d-bdac-aaff777b0ef9" alt="Mini scatolina bianca intrecciata">
-<img src="https://github.com/user-attachments/assets/73b0315f-edf7-499d-bdac-aaff777b0ef9" alt="Tazza-candela alla Lavanda">
-<img src="https://github.com/user-attachments/assets/78a8e722-14bc-43ee-b52e-4216faea3dc8" alt="Cuore su vassoio con perle">
-<img src="https://github.com/user-attachments/assets/34d280b7-6e2f-4cc9-88f5-8e9991110792" alt="Set bianco e oro">
